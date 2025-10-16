@@ -5,15 +5,12 @@ const withPWA = require("next-pwa")({
   register: true,
   skipWaiting: true,
   disable: process.env.NODE_ENV === "development",
+  buildExcludes: [/app-build-manifest\.json$/],
 });
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  experimental: {
-    turbo: {
-      rules: {}, // fallback clean
-    },
-  },
+  turbopack: {},
   webpack: (config) => {
     // ensure next-pwa works with webpack
     return config;
