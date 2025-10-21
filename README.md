@@ -1,5 +1,3 @@
----
-
 # 📱 Next.js Progressive Web App (PWA)
 
 This project is a **Progressive Web App (PWA)** built using **Next.js** with the help of the [`next-pwa`](https://www.npmjs.com/package/next-pwa) plugin.
@@ -70,5 +68,3 @@ After setup and build:
 * Your Next.js app works **offline**.
 * A **download (install)** option appears.
 * Installed app shows the **custom icon** and **app name** from `manifest.json`.
-
----
